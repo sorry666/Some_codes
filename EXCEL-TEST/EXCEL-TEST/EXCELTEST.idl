@@ -1,0 +1,29 @@
+// EXCELTEST.idl : EXCEL-TEST.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(EXCELTEST.tlb)。
+
+[ uuid(484503DB-A92A-431A-B20E-3C7713E6E529), version(1.0) ]
+library EXCELTEST
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CEXCELTESTDoc 的主调度接口
+	
+	[ uuid(55F8E529-8DE2-41A1-8CE3-191E7C84C609) ]
+	dispinterface IEXCELTEST
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CEXCELTESTDoc 的类信息
+	
+	[ uuid(A9E9DAED-42BA-4C05-89D5-08ED9407F763) ]
+	coclass EXCELTEST
+	{
+		[default] dispinterface IEXCELTEST;
+	};
+};
