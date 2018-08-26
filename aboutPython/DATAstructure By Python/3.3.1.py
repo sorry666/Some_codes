@@ -40,6 +40,6 @@ def binarySearch(target,sortedLyst):
 	
 
 
-			
+
 			
 
