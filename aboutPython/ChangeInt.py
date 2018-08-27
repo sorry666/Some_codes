@@ -4,4 +4,3 @@ def ChangeInt( a ):
 b = 2
 ChangeInt(b)
 print( b ) # 结果是 2
-print(a)
