@@ -40,7 +40,7 @@ class Profiler(object):
 		if lyst != None:
 			self._lyst=lyst
 		elif unique:
-			self._lyst=list(range(1,size+1))
+			self._lyst=list(range(1,size+1))   #####未加list前报错，说类型不符合，增加list后问题已经解决
 			random.shuffle(self._lyst)
 		else:
 			self._lyst=[]
