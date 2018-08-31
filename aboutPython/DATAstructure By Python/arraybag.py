@@ -20,10 +20,13 @@ class ArrayBag(object):
 		sourceCollection,if it's present"""
 
 		self._items= Array(ArrayBag.DEFAULT_CAPACITY)
-		self._size = 0
-		if sourceCollectioon:
-			for item in sourceCollectioon:
-				self.add(item)
+		AbstractBag.__init__(self,sourceCollectioon)
+
+
+		# self._size = 0
+		# if sourceCollectioon:
+		# 	for item in sourceCollectioon:
+		# 		self.add(item)
 
 
 

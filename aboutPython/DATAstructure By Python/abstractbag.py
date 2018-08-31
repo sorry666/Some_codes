@@ -60,7 +60,7 @@ class AbstractBag(object):
 
 	def __add__(self,other):
 		"""Return a new bag containing the contents of self and other"""
-		result =ArrayBag(self)
+		result =type(self)(self)
 		for item in other:
 			result.add(item)
 
