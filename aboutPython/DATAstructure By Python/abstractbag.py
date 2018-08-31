@@ -10,7 +10,8 @@ class AbstractBag(object):
 	"""An array-based bag implementation. """
 
 	
-	
+	##add some thing 
+	#
 	
 
 	#Constructor
