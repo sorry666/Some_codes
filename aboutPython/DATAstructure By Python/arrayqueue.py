@@ -1,19 +1,19 @@
 """
 
-File: arraystack.py
-Date:09-01-2018
+File: arrayqueue.py
+Date:09-06-2018
 
 
-20180902 已经完成强制引发异常的修改
-20180901 还需要修改peek()和pop()方法的先验条件，强制引发异常.
+20180906   基于arraystack.py修改的，但是并没有修改完全。大部分修改不足
+
 
 """
 
 from arrays import Array
-from abstractstack import AbstractStack 
+from abstractcollection import AbstractCollection
 
 
-class ArrayStack(AbstractStack):
+class ArrayQueue(AbstractCollevtion):
 	"""An array-based stack implementation """
 	DEFAULT_CAAPACITY = 10
 
@@ -21,7 +21,7 @@ class ArrayStack(AbstractStack):
 		"""Sets the initials state of self , which include the contents of sourceCollection,
 		if it's present"""
 		self._items = Array(ArrayStack,DEFAULT_CAAPACITY)
-		AbstractStack.__init__(self,sourceCollection)
+		AbstractCollection.__init__(self,sourceCollection)
 
 
 	#Accessors
