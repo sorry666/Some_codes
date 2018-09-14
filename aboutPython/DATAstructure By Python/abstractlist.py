@@ -7,7 +7,7 @@ Description:
 """
 
 
-from abstractcollection import abstractcollection
+from abstractcollection import AbstractCollection
 
 class AbstractList(AbstractCollection):
 	""" An abstract list implemention """
